@@ -362,7 +362,7 @@ type StatsS17 struct {
 	Ghs5s             Number  `json:"GHS 5s,string"`
 	GhsAverage        float64 `json:"GHS av"`
 	MinerCount        int     `json:"miner_count"`
-	Frequency         int     `json:"frequency,string"`
+	Frequency         Number  `json:"frequency,string"`
 	FanNum            int     `json:"fan_num"`
 	Fan1              int     `json:"fan1"`
 	Fan2              int     `json:"fan2"`
@@ -453,26 +453,26 @@ type StatsS17 struct {
 	TempChip14        string  `json:"temp_chip14"`
 	TempChip15        string  `json:"temp_chip15"`
 	TempChip16        string  `json:"temp_chip16"`
-	TotalRateIdeal    int     `json:"total_rateideal"`
+	TotalRateIdeal    float64 `json:"total_rateideal"`
 	TotalFrequencyAvg int     `json:"total_freqavg"`
 	TotalAcn          int     `json:"total_acn"`
 	TotalRate         float64 `json:"total_rate"`
-	ChainRateIdeal1   int     `json:"chain_rateideal1"`
-	ChainRateIdeal2   int     `json:"chain_rateideal2"`
-	ChainRateIdeal3   int     `json:"chain_rateideal3"`
-	ChainRateIdeal4   int     `json:"chain_rateideal4"`
-	ChainRateIdeal5   int     `json:"chain_rateideal5"`
-	ChainRateIdeal6   int     `json:"chain_rateideal6"`
-	ChainRateIdeal7   int     `json:"chain_rateideal7"`
-	ChainRateIdeal8   int     `json:"chain_rateideal8"`
-	ChainRateIdeal9   int     `json:"chain_rateideal9"`
-	ChainRateIdeal10  int     `json:"chain_rateideal10"`
-	ChainRateIdeal11  int     `json:"chain_rateideal11"`
-	ChainRateIdeal12  int     `json:"chain_rateideal12"`
-	ChainRateIdeal13  int     `json:"chain_rateideal13"`
-	ChainRateIdeal14  int     `json:"chain_rateideal14"`
-	ChainRateIdeal15  int     `json:"chain_rateideal15"`
-	ChainRateIdeal16  int     `json:"chain_rateideal16"`
+	ChainRateIdeal1   float64 `json:"chain_rateideal1"`
+	ChainRateIdeal2   float64 `json:"chain_rateideal2"`
+	ChainRateIdeal3   float64 `json:"chain_rateideal3"`
+	ChainRateIdeal4   float64 `json:"chain_rateideal4"`
+	ChainRateIdeal5   float64 `json:"chain_rateideal5"`
+	ChainRateIdeal6   float64 `json:"chain_rateideal6"`
+	ChainRateIdeal7   float64 `json:"chain_rateideal7"`
+	ChainRateIdeal8   float64 `json:"chain_rateideal8"`
+	ChainRateIdeal9   float64 `json:"chain_rateideal9"`
+	ChainRateIdeal10  float64 `json:"chain_rateideal10"`
+	ChainRateIdeal11  float64 `json:"chain_rateideal11"`
+	ChainRateIdeal12  float64 `json:"chain_rateideal12"`
+	ChainRateIdeal13  float64 `json:"chain_rateideal13"`
+	ChainRateIdeal14  float64 `json:"chain_rateideal14"`
+	ChainRateIdeal15  float64 `json:"chain_rateideal15"`
+	ChainRateIdeal16  float64 `json:"chain_rateideal16"`
 	TempMax           int     `json:"temp_max"`
 	NoMatchingWork    int     `json:"no_matching_work"`
 	ChainAcn1         int     `json:"chain_acn1"`

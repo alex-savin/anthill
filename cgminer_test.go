@@ -769,7 +769,7 @@ func TestStats2BoardsS17(t *testing.T) {
 		Ghs5s:             "82749.25",
 		GhsAverage:        81312.95,
 		MinerCount:        3,
-		Frequency:         637,
+		Frequency:         "637",
 		FanNum:            0,
 		Fan1:              0,
 		Fan2:              0,
