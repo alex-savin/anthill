@@ -136,6 +136,7 @@ func (miner *CGMiner) StatsContext(ctx context.Context) (Stats, error) {
 	var resp statsResponse
 	// fix incorrect json response from miner "}{"
 	fixResponse := bytes.Replace(result, []byte("}{"), []byte(","), 1)
+	fmt.Printf(string(fixResponse))
 	err = json.Unmarshal(fixResponse, &resp)
 	if err != nil {
 		return nil, err
