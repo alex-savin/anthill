@@ -133,7 +133,7 @@ func (miner *CGMiner) StatsContext(ctx context.Context) (Stats, error) {
 	if err != nil {
 		return nil, err
 	}
-	fmt.Printf("%+v\n\n", result)
+	fmt.Printf("%s\n\n", string(result))
 	var resp statsResponse
 	// fix incorrect json response from miner "}{"
 	fixResponse := bytes.Replace(result, []byte("}{"), []byte(","), 1)
